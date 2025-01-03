@@ -23,18 +23,18 @@ export const tabs: {
     icon: "heart",
     displayName: "Wishlist",
   },
-
-  {
-    name: "Trips",
-    id: "trips",
-    icon: "heart",
-    displayName: "Trips",
-  },
   {
     name: "Inbox",
     id: "inbox",
     icon: "message",
     displayName: "Inbox",
+  },
+
+  {
+    name: "Trips",
+    id: "trips",
+    icon: "airbnb",
+    displayName: "Trips",
   },
 
   {
@@ -46,10 +46,9 @@ export const tabs: {
 ];
 
 function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
-  console.log(navigation);
   return (
     <View
-      className="flex-row items-center justify-between px-6 bg-white bg-main border-t border-t-[#D8DCE0]"
+      className="flex-row items-center justify-between px-4 bg-white bg-main border-t border-t-[#D8DCE0]"
       style={{
         paddingBottom: platformType == "ios" ? 4 : 2,
       }}
@@ -94,13 +93,15 @@ function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
             onPress={onPress}
             onLongPress={onLongPress}
             activeOpacity={0.8}
-            className="items-center justify-between p-4 gap-y-1"
+            className="items-center justify-between p-4 "
           >
             {BottomBarIcon(route.name, isFocused)}
 
             <Text
-              className={`font-sans text-xs ${
-                isFocused ? "text-primary-70 font-bold" : "text-[#717375]"
+              className={`text-xs tracking-[-0.24px] ${
+                isFocused
+                  ? "text-primary-70 font-AirbnbCerealMedium"
+                  : "text-[#717375] font-AirbnbCerealBook "
               }`}
             >
               {buttonName}

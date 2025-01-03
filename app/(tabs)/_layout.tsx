@@ -33,7 +33,7 @@ export default function TabLayout() {
         name="trips"
         options={{
           title: "Trips",
-          tabBarIcon: ({ color }) => <Icon icon="heart" stroke={color} />,
+          tabBarIcon: ({ color }) => <Icon icon="airbnb" stroke={color} />,
         }}
       />
       <Tabs.Screen
@@ -47,7 +47,7 @@ export default function TabLayout() {
         name="profile"
         options={{
           title: "Profile",
-          tabBarIcon: ({ color }) => <Icon icon="message" stroke={color} />,
+          tabBarIcon: ({ color }) => <Icon icon="userCircle" stroke={color} />,
         }}
       />
     </Tabs>

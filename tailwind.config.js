@@ -18,8 +18,16 @@ module.exports = {
           90: "#67101F",
           100: "#4E0916",
         }
+      },
+      fontFamily: {
+        "sans": ["AirbnbCerealAppBold", "AirbnbCerealAppBook", "AirbnbCerealAppLight", "AirbnbCerealAppMedium"],
+        "AirbnbCerealBold": ["AirbnbCerealAppBold"],
+        "AirbnbCerealBook": ["AirbnbCerealAppBook"],
+        "AirbnbCerealLight": ["AirbnbCerealAppLight"],
+        "AirbnbCerealMedium": ["AirbnbCerealAppMedium"],
       }
     },
+
   },
   plugins: [],
 }
